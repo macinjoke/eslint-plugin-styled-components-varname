@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-styled-components-varname",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "eslint plugin for styled-components variable name.",
   "keywords": [
     "eslint",
