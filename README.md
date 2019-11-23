@@ -1,5 +1,7 @@
 # eslint-plugin-styled-components-varname
 
+**Don't use yet! sorry**
+
 styled-components variable name
 
 ## Installation
