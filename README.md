@@ -26,28 +26,22 @@ Add `styled-components-varname` to the plugins section of your `.eslintrc` confi
 
 ```json
 {
-    "plugins": [
-        "styled-components-varname"
-    ]
+  "plugins": ["styled-components-varname"]
 }
 ```
-
 
 Then configure the rules you want to use under the rules section.
 
 ```json
 {
-    "rules": {
-        "styled-components-varname/rule-name": 2
-    }
+  "rules": {
+    "styled-components-varname/varname": [
+      2,
+      {
+        "tagStyle": { "prefix": "_" },
+        "extendedStyle": { "prefix": "$" }
+      }
+    ]
+  }
 }
 ```
-
-## Supported Rules
-
-* Fill in provided rules here
-
-
-
-
-
