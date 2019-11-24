@@ -20,8 +20,6 @@ Next, install `eslint-plugin-styled-components-varname`:
 $ npm install eslint-plugin-styled-components-varname --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-styled-components-varname` globally.
-
 ## Usage
 
 Add `styled-components-varname` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
