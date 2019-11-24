@@ -35,21 +35,31 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
   "rules": {
-    "styled-components-varname/varname": [
-      2,
-      {
-        "tagStyle": { "prefix": "_" },
-        "extendedStyle": { "prefix": "$" }
-      }
-    ]
+    "styled-components-varname/varname": 2,
   }
 }
 ```
 
-This plugin only supports one rule, varname.
+This plugin only supports one rule, `varname`.
 
 ## Options
-This rule must be given the `tagStyle` and` extendedStyle` options.
+This rule takes one object argument which has `tagStyle` and `extendedStyle`.
+If no option is given, it defaults to the following value:
+
+```
+"styled-components-varname/varname": [
+  2,
+  {
+    "tagStyle": {
+      "prefix": '_',
+    },
+    "extendedStyle": {
+      "prefix": '$',
+    },
+  },
+],
+
+```
 
 tagStyle defines a naming convention that applies to things like `styled.foo`.
 
@@ -67,6 +77,17 @@ tagStyle and extendedStyle have the following properties of the same format:
 
 At least one property must be defined.
 
+Examples of **correct** code for this rule:
+
+```javascript
+const _TitleDiv = styled.div`
+  height: 32px;
+`
+
+const $FooComponent = styled(FooComponent)`
+  display: flex;
+`
+```
 
 Examples of **correct** code for the  `{ tagStyle: { prefix: '_' }, extendedStyle: { prefix: '__' } }` option:
 
