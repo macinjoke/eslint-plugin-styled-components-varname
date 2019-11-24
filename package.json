@@ -1,7 +1,11 @@
 {
   "name": "eslint-plugin-styled-components-varname",
   "version": "0.3.0",
+  "repository": "https://github.com/macinjoke/eslint-plugin-styled-components-varname",
   "description": "eslint plugin for styled-components variable name.",
+  "files": [
+    "lib/"
+  ],
   "keywords": [
     "eslint",
     "eslintplugin",
