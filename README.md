@@ -2,7 +2,7 @@
 
 **Don't use yet! sorry**
 
-styled-components variable names tend to be long like `StyledFooBarAnchor`.
+[styled-components](https://github.com/styled-components/styled-components) variable names tend to be long like `StyledFooBarAnchor`.
 
 This rule can apply a uniform naming rule by defining prefix or regular expression pattern.
 
@@ -22,7 +22,7 @@ $ npm install eslint-plugin-styled-components-varname --save-dev
 
 ## Usage
 
-Add `styled-components-varname` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `styled-components-varname` to the plugins section of your `.eslintrc` configuration file.
 
 ```json
 {
@@ -40,7 +40,33 @@ Then configure the rules you want to use under the rules section.
 }
 ```
 
+## Rules
+
 This plugin only supports one rule, `varname`.
+
+Examples of **correct** code for this rule:
+
+```javascript
+const _TitleDiv = styled.div`
+  height: 32px;
+`
+
+const $FooComponent = styled(FooComponent)`
+  display: flex;
+`
+```
+
+Examples of **incorrect** code for this rule:
+
+```javascript
+const StyledTitleDiv = styled.div`
+  height: 32px;
+`
+
+const StyledFooComponent = styled(FooComponent)`
+  display: flex;
+`
+```
 
 ## Options
 This rule takes one object argument which has `tagStyle` and `extendedStyle`.
@@ -77,18 +103,6 @@ tagStyle and extendedStyle have the following properties of the same format:
 
 At least one property must be defined.
 
-Examples of **correct** code for this rule:
-
-```javascript
-const _TitleDiv = styled.div`
-  height: 32px;
-`
-
-const $FooComponent = styled(FooComponent)`
-  display: flex;
-`
-```
-
 Examples of **correct** code for the  `{ tagStyle: { prefix: '_' }, extendedStyle: { prefix: '__' } }` option:
 
 ```javascript
@@ -97,18 +111,6 @@ const _TitleDiv = styled.div`
 `
 
 const __FooComponent = styled(FooComponent)`
-  display: flex;
-`
-```
-
-Examples of **incorrect** code for the  `{ tagStyle: { prefix: '_' }, extendedStyle: { prefix: '__' } }` option:
-
-```javascript
-const StyledTitleDiv = styled.div`
-  height: 32px;
-`
-
-const StyledFooComponent = styled(FooComponent)`
   display: flex;
 `
 ```
