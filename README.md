@@ -87,11 +87,11 @@ If no option is given, it defaults to the following value:
 
 ```
 
-tagStyle defines a naming convention that applies to things like `styled.foo`.
+`tagStyle` defines a naming convention that applies to things like `styled.foo`.
 
-extendedStyle defines a naming convention that applies to things like `styled(Foo)`.
+`extendedStyle` defines a naming convention that applies to things like `styled(Foo)`.
 
-tagStyle and extendedStyle have the following properties of the same format:
+`tagStyle` and `extendedStyle` have the following properties of the same format:
 
 ```
 {
