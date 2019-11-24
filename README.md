@@ -95,9 +95,9 @@ tagStyle and extendedStyle have the following properties of the same format:
 
 ```
 {
-    prefix: string, // optional
-    suffix: string, // optional
-    pattern: string, // optional
+  prefix: string, // optional
+  suffix: string, // optional
+  pattern: string, // optional
 }
 ```
 
