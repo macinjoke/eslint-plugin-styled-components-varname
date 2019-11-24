@@ -1,7 +1,5 @@
 # eslint-plugin-styled-components-varname
 
-**Don't use yet! sorry**
-
 [styled-components](https://github.com/styled-components/styled-components) variable names tend to be long like `StyledFooBarAnchor`.
 
 This rule can apply a uniform naming rule by defining prefix or regular expression pattern. This allows you to make the styled-components variable names shorter and eliminate the trouble of naming.
