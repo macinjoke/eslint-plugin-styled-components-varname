@@ -1,4 +1,5 @@
 # eslint-plugin-styled-components-varname
+[![Build Status](https://travis-ci.org/macinjoke/eslint-plugin-styled-components-varname.svg?branch=master)](https://travis-ci.org/macinjoke/eslint-plugin-styled-components-varname)
 
 [styled-components](https://github.com/styled-components/styled-components) variable names tend to be long like `StyledFooBarAnchor`.
 
