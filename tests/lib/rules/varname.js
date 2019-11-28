@@ -46,21 +46,25 @@ ruleTester.run('my-rule', rule, {
     },
     {
       code: 'const StyledTitleDiv = styled.div``',
+      output: 'const _StyledTitleDiv = styled.div``',
       errors: [{ message: "'StyledTitleDiv' must starts with '_'" }],
       options: [{ tagStyle: { prefix: '_' } }],
     },
     {
       code: 'const StyledFooComponent = styled(FooComponent)``',
+      output: 'const _StyledFooComponent = styled(FooComponent)``',
       errors: [{ message: "'StyledFooComponent' must starts with '_'" }],
       options: [{ extendedStyle: { prefix: '_' } }],
     },
     {
       code: 'const StyledTitleDiv = styled.div``',
+      output: 'const StyledTitleDivS = styled.div``',
       errors: [{ message: "'StyledTitleDiv' must ends with 'S'" }],
       options: [{ tagStyle: { suffix: 'S' } }],
     },
     {
       code: 'const StyledFooComponent = styled(FooComponent)``',
+      output: 'const StyledFooComponentES = styled(FooComponent)``',
       errors: [{ message: "'StyledFooComponent' must ends with 'ES'" }],
       options: [{ extendedStyle: { suffix: 'ES' } }],
     },
