@@ -5,6 +5,8 @@
 
 This rule can apply a uniform naming rule by defining prefix or regular expression pattern. This allows you to make the styled-components variable names shorter and eliminate the trouble of naming.
 
+In addition, it makes it easy to distinguish regular styles like `_Div = styled.div` from extended styles like` $FooPanel = styled (FooPanel)`.
+
 ## Installation
 
 You'll first need to install [ESLint](http://eslint.org):
